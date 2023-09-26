@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+
+ @layer components {
+    body {
+      @apply font-sans bg-beige text-base md:text-lg text-slate-900;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-serif text-center md:text-left;
+    }
+    .soft-animation{
+    @apply hover:scale-105 ease-in duration-500;
+  }
+  .logo-styling {
+    @apply text-xl font-bold tracking-wide text-slate-900 hover:text-accent uppercase;
+    }
+ }
+
+::selection {
+  background-color: #dabdca;
+}
+
+.swiper-slide.swiper-slide-active{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  color: #6D74DE;
+}
+
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(6, 6rem);
+  grid-template-columns: repeat(7, 6rem); 
+}
+
+.gallery > img:nth-child(1){
+  grid-row: 3/6;
+  grid-column: 1/4;
+}
+
+
+.gallery > img:nth-child(2){
+  grid-row: 2/5;
+  grid-column: 3/6;
+}
+
+
+.gallery > img:nth-child(3){
+  grid-row: 1/4;
+  grid-column: 5/8;
+}
+
+.gallery >img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: solid 0.75rem white;
+  border-radius: 1 rem;
+  box-shadow: 0 1rem 2rem rgb (0 0 0/ .2);
+}
+
+
+
+ 
