@@ -1,4 +1,4 @@
-A few specs and observartions about this project:
+A few specs and observations about this project:
 
  - This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
